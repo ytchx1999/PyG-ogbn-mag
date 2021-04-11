@@ -19,7 +19,7 @@ This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/sn
 
 #### Experiment Setup：
 
-1. Generate node2vec embeddings, which save in `mag_embedding.pt`
+1. Generate metapath2vec embeddings, which save in `mag_embedding.pt`
 
    ```bash
    python metapath2vec.py
@@ -51,7 +51,7 @@ num_steps = 30
 Metapath2vec:
 
 ```bash
-enbedding_dim = 128
+embedding_dim = 128
 lr = 0.01
 batch_size = 20000
 walk_length = 64
