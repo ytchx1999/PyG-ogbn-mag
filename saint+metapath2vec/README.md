@@ -1,6 +1,8 @@
 # GraphSAINT + metapath2vec
 This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/snap-stanford/ogb/blob/master/examples/nodeproppred/mag/graph_saint.py)  model, using metapath2vec embedding. 
 
+[**Check out the OGBn-Mag LeaderBoard!**](https://ogb.stanford.edu/docs/leader_nodeprop/#ogbn-mag)
+
 ### ogbn-mag
 
 + Check out the model： [(GraphSAINT (R-GCN aggr))](https://github.com/snap-stanford/ogb/blob/master/examples/nodeproppred/mag/graph_saint.py)
