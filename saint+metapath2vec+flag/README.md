@@ -1,4 +1,4 @@
-# GraphSAINT + metapath2vec
+# GraphSAINT + metapath2vec + FLAG
 This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/snap-stanford/ogb/blob/master/examples/nodeproppred/mag/graph_saint.py)  model, using metapath2vec embedding. 
 
 ### ogbn-mag
@@ -10,6 +10,7 @@ This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/sn
 
 + adjust hidden_dim
 + add metapath2vec embedding
++ add FLAG method
 
 #### Environmental Requirements
 
@@ -62,13 +63,11 @@ epochs = 5
 
 ```bash
 All runs:
-Highest Train: 84.01 ± 2.72
-Highest Valid: 50.66 ± 0.17
-  Final Train: 84.01 ± 2.72
-   Final Test: 49.66 ± 0.22
+Highest Valid: 50.88 ± 0.18
+   Final Test: 49.69 ± 0.22
 ```
 
-| Model                     | Test Accuracy   | Valid Accuracy  | Parameters | Hardware          |
-| ------------------------- | --------------- | --------------- | ---------- | ----------------- |
-| GraphSAINT + metapath2vec | 0.4966 ± 0.0022 | 0.5066 ± 0.0017 | 309764724  | Tesla V100 (32GB) |
+| Model                            | Test Accuracy | Valid Accuracy | Parameters | Hardware          |
+| -------------------------------- | ------------- | -------------- | ---------- | ----------------- |
+| GraphSAINT + metapath2vec + FLAG | 49.69 ± 0.22  | 50.88 ± 0.18   | 309764724  | Tesla V100 (32GB) |
 

@@ -1,4 +1,4 @@
-# GraphSAINT + metapath2vec
+# GraphSAINT + metapath2vec + C&S
 This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/snap-stanford/ogb/blob/master/examples/nodeproppred/mag/graph_saint.py)  model, using metapath2vec embedding. 
 
 ### ogbn-mag
@@ -10,6 +10,7 @@ This is an improvement of the  [(GraphSAINT (R-GCN aggr))](https://github.com/sn
 
 + adjust hidden_dim
 + add metapath2vec embedding
++ add C&S
 
 #### Environmental Requirements
 
@@ -46,6 +47,13 @@ walk_length = 2
 runs = 10
 epochs = 30
 num_steps = 30
+num_correction_layers = 100
+correction_alpha = 0.8
+num_smoothing_layers = 100
+smoothing_alpha = 0.8
+scale = 1.
+A1 = 'DAD'
+A2 = 'DAD'
 ```
 
 Metapath2vec:
@@ -62,13 +70,11 @@ epochs = 5
 
 ```bash
 All runs:
-Highest Train: 84.01 ± 2.72
-Highest Valid: 50.66 ± 0.17
-  Final Train: 84.01 ± 2.72
-   Final Test: 49.66 ± 0.22
+Highest Valid: 49.36 ± 0.24
+   Final Test: 48.43 ± 0.24
 ```
 
-| Model                     | Test Accuracy   | Valid Accuracy  | Parameters | Hardware          |
-| ------------------------- | --------------- | --------------- | ---------- | ----------------- |
-| GraphSAINT + metapath2vec | 0.4966 ± 0.0022 | 0.5066 ± 0.0017 | 309764724  | Tesla V100 (32GB) |
+| Model                           | Test Accuracy   | Valid Accuracy  | Parameters | Hardware          |
+| ------------------------------- | --------------- | --------------- | ---------- | ----------------- |
+| GraphSAINT + metapath2vec + C&S | 0.4843 ± 0.0024 | 0.4936 ± 0.0024 | 309764724  | Tesla V100 (32GB) |
 
