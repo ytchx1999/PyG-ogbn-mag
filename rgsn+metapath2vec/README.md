@@ -36,7 +36,7 @@ Our paper is available at [https://arxiv.org/pdf/2105.08330.pdf](https://arxiv.o
    
    ```bash
    cd rgsn+metapath2vec/
-	rm -r feat/
+   rm -r feat/
    python rgsn.py --use_attack True
    ```
    
