@@ -32,18 +32,14 @@ Our paper is available at [https://arxiv.org/pdf/2105.08330.pdf](https://arxiv.o
 
 2. Run the real model
 
-   Delete history feat to prevent errors.
+   Delete history feat to prevent errors, and then run rgsn+metapath2vec.
    
    ```bash
    cd rgsn+metapath2vec/
-rm -r feat/
-   ```
-   
-   Run rgsn+metapath2vec.
-   
-   ```bash
+	rm -r feat/
    python rgsn.py --use_attack True
    ```
+   
 
 #### Detailed Hyperparameter:
 

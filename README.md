@@ -9,5 +9,6 @@ This is the implement and improvement code of ogbn-mag.
 | saint+metapath2vec | GraphSAINT + metapath2vec |
 | saint+metapath2vec+cs | GraphSAINT + metapath2vec + C&S |
 | saint+metapath2vec+flag | GraphSAINT + metapath2vec +FLAG |
+| rgsn+metapath2vec | RGSN + metapath2vec |
 
 
