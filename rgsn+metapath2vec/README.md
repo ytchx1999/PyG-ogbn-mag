@@ -13,8 +13,10 @@ Our paper is available at [https://arxiv.org/pdf/2105.08330.pdf](https://arxiv.o
 
 #### Improvement Strategy：
 
++ Embedding Usage
+  + Add metapath2vec embedding ---- the usage of metapath2vec greatly accelerates the convergence of R-GSN.
+  + More details can be found in our paper ([https://arxiv.org/abs/2105.08330](https://arxiv.org/abs/2105.08330)).
 + adjust hidden_dim
-+ add metapath2vec embedding
 
 #### Environmental Requirements
 
